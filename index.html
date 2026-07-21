@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Holy Kitchen!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="estilos/global.css">
+    <link rel="stylesheet" href="estilos/inicio.css">
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Navegação principal">
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="receitas.html">Receitas</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="publique.html">Publique sua Receita</a></li>
+                </ul>
+                
+                <button type="button" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        
+            <h1 id="logo"><a href="index.html">Holy Kitchen!</a></h1>
+
+            <a href="login.html" aria-label="Login" id="usuario"><i class="fa-solid fa-user"></i></a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <article id="publique">
+                <h2>Tem uma receita especial? Ela merece um lugar aqui.</h2>
+
+                <p>Compartilhe com a gente e inspire outras pessoas na cozinha.</p>
+
+                <a href="publique.html">Publicar minha receita</a>
+            </article>
+
+            <article id="pressa">
+                <h2>Sem tempo pra cozinhar hoje?</h2>
+                
+                <p>Separei receitas rápidas pra salvar o seu dia.</p>
+
+                <a href="blog/pressa.html">Ver receitas rápidas</a>
+            </article>
+
+            <article id="piquenique">
+                <h2>Planejando um piquenique?</h2>
+                
+                <p>Descubra o que levar pra aproveitar o dia ao ar livre sem esquecer nada.</p>
+                
+                <a href="blog/piquenique.html">Ver dicas de piquenique</a>
+            </article>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre o Holy Kitchen!</h2>
+
+            <p>
+                O Holy Kitchen! nasceu como um projeto pessoal de estudo — um jeitinho de aprender programação cozinhando ideias na tela também. Aqui você encontra receitas escolhidas com carinho e dicas pra facilitar o seu dia na cozinha.
+            </p>
+        </section>
+
+        <section id="destaques">
+            <h2>Destaques da Semana</h2>
+
+            <article>
+                <a href="receitas/cookies.html">
+                    <picture>
+                        <source media="(max-width: 670px)" srcset="imagens/cookies-card-mobile.webp">
+                        <img src="imagens/cookies-card.webp" alt="Cookies com gotas de chocolate">
+                    </picture>
+
+                    <h3>Cookies com Gotas de Chocolate</h3>
+
+                    <p>Crocante por fora, macio por dentro. Simplesmente irresistível.</p>
+                </a>
+            </article>
+
+            <article>
+                <a href="receitas/sopa-tomate.html">
+                    <picture>
+                        <source media="(max-width: 670px)" srcset="imagens/sopa-tomate-card-mobile.webp">
+                        <img src="imagens/sopa-tomate-card.webp" alt="Sopa de tomate">
+                    </picture>
+
+                    <h3>Sopa de Tomate</h3>
+
+                    <p>Conforto em forma de sopa, pra qualquer dia frio (ou não).</p>
+                </a>
+            </article>
+        </section>
+
+        <section id="blog">
+            <h2>Direto do Blog</h2>
+
+            <article>
+                <a href="blog/cozinhar-1-2.html">
+                    <picture>
+                        <source media="(max-width: 670px)" srcset="imagens/cozinhar-1-2-card-mobile.webp">
+                        <img src="imagens/cozinhar-1-2-card.webp" alt="Cozinhando para uma ou duas pessoas">
+                    </picture>
+
+                    <h3>Cozinhando para Uma ou Duas Pessoas</h3>
+
+                    <p>
+                        Porções certas, sem sobra e sem desperdício. Cozinhar sozinha (ou a dois) também pode ser gostoso.
+                    </p>
+                </a>
+            </article>
+
+            <article>
+                <a href="blog/despensa.html">
+                    <picture>
+                        <source media="(max-width: 670px)" srcset="imagens/despensa-card-mobile.webp">
+                        <img src="imagens/despensa-card.webp" alt="Como organizar sua despensa e geladeira">
+                    </picture>
+
+                    <h3>Como Organizar sua Despensa e Geladeira</h3>
+
+                    <p>
+                            Um jeitinho simples de saber o que você tem, evitar desperdício e facilitar a vida na hora de cozinhar.
+                    </p>
+                </a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Feito com carinho por Nathália de Bona</p>
+
+        <ul>
+            <li>
+                <a href="mailto:nathdbona@gmail.com"><i class="fa-regular fa-envelope"></i> nathdbona@gmail.com</a>
+            </li>
+
+            <li>
+                <a href="https://github.com/nathaliadebona"><i class="fa-brands fa-github"></i> nathaliadebona</a>
+            </li>
+        </ul>
+
+        <p>&#169; 2026 Holy Kitchen!</p>
+    </footer>
+</body>
+</html>
