@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Omelete Recheada</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../estilos/global.css">
+    <link rel="stylesheet" href="../estilos/receita.css">
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Navegação principal">
+            <div id="menu">
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="../receitas.html">Receitas</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../publique.html">Publique sua Receita</a></li>
+                </ul>
+                
+                <button type="button" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        
+            <h1 id="logo"><a href="../index.html">Holy Kitchen!</a></h1>
+
+            <a href="../login.html" aria-label="Login" id="usuario"><i class="fa-solid fa-user"></i></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="receita-intro">
+            <picture>
+                <source media="(max-width: 670px)" srcset="../imagens/omelete-full-mobile.webp">
+                <img src="../imagens/omelete-full.webp" alt="Omelete recheada com queijo, presunto e tomate">
+            </picture>
+
+            <h2>Omelete Recheada</h2>
+
+            <p>
+                Rápida, prática e recheada do seu jeito. A omelete perfeita pra quando a fome aperta e o tempo é curto — mas ninguém precisa saber que levou só 15 minutos.
+            </p>
+
+            <ul>
+                <li><i class="fa-regular fa-clock"></i> Tempo de preparo: 15 minutos</li>
+                <li><i class="fa-solid fa-bowl-food"></i> Rendimento: 2 porções</li>
+                <li><i class="facil fa-solid fa-heart"></i> Dificuldade: Fácil</li>
+            </ul>
+        </section>
+
+        <section class="ingredientes">
+            <h3>Ingredientes</h3>
+
+            <label for="porcoes">Porções</label>
+            <input type="number" id="porcoes" name="porcoes" value="2">
+
+            <ul>
+                <li>
+                    <label>
+                        <input type="checkbox" id="ing-1">
+                        <span data-qtd="4">4</span> ovos
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="ing-2">
+                        <span data-qtd="100">100</span>g de queijo mussarela ralado
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="ing-3">
+                        <span data-qtd="100">100</span>g de presunto picado
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="ing-4">
+                        <span data-qtd="1">1</span> tomate pequeno picado, sem sementes
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="ing-5">
+                        <span data-qtd="2">2</span> colheres (sopa) de cebolinha picada
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="ing-6">
+                        <span>sal e pimenta do reino a gosto</span>
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="ing-7">
+                        <span data-qtd="1">1</span> colher (sopa) de manteiga
+                    </label>
+                </li>
+            </ul>
+        </section>
+
+        <section class="modo-preparo">
+            <h3>Modo de Preparo</h3>
+
+            <ol>
+                <li>
+                    <label>
+                        <input type="checkbox" id="passo-1">
+                        Bata os ovos com sal e pimenta até ficarem bem homogêneos.
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="passo-2">
+                        Aqueça a manteiga numa frigideira antiaderente em fogo médio.
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="passo-3">
+                        Despeje os ovos batidos e deixe cozinhar até as bordas começarem a firmar.
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="passo-4">
+                        Distribua o presunto, o queijo e o tomate sobre metade da omelete.
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="passo-5">
+                        Dobre a omelete ao meio com a espátula e deixe por mais 1 a 2 minutos, até o queijo derreter.
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="passo-6">
+                        Finalize com a cebolinha picada por cima e sirva quente.
+                    </label>
+                </li>    
+            </ol>
+        </section>
+
+        <div class="comparador">
+            <button type="button">Comparar medidas</button>
+
+            <dialog id="modal-medidas">
+                <button type="button" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+
+                <h3>Comparador de Medidas</h3>
+
+                <p>Vale só pra ingredientes líquidos ou secos soltos — o peso muda de ingrediente pra ingrediente!</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="medida" scope="col">Medida</th>
+                            <th class="equivalente" scope="col">Equivalente em ml</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="medida">1 xícara de chá</td>
+                            <td class="equivalente">240 ml</td>
+                        </tr>
+
+                        <tr>
+                            <td class="medida">1 copo americano</td>
+                            <td class="equivalente">200 ml</td>
+                        </tr>
+
+                        <tr>
+                            <td class="medida">1 colher de sopa</td>
+                            <td class="equivalente">15 ml</td>
+                        </tr>
+
+                        <tr>
+                            <td class="medida">1 colher de chá</td>
+                            <td class="equivalente">5 ml</td>
+                        </tr>
+
+                        <tr>
+                            <td class="medida">1 colher de café</td>
+                            <td class="equivalente">2,5 ml</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </dialog>
+        </div>
+
+        <p class="veja-tambem">Veja também:<a href="../blog/pressa.html"> Está com pressa?</a></p>
+    </main>
+
+    <footer>
+        <p>Feito com carinho por Nathália de Bona</p>
+
+        <ul>
+            <li>
+                <a href="mailto:nathdbona@gmail.com"><i class="fa-regular fa-envelope"></i> nathdbona@gmail.com</a>
+            </li>
+
+            <li>
+                <a href="https://github.com/nathaliadebona"><i class="fa-brands fa-github"></i> nathaliadebona</a>
+            </li>
+        </ul>
+
+        <p>&#169; 2026 Holy Kitchen!</p>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
