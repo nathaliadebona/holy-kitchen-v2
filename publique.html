@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Publique sua Receita!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="estilos/global.css">
+    <link rel="stylesheet" href="estilos/publique.css">
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Navegação principal">
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="receitas.html">Receitas</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="publique.html">Publique sua Receita</a></li>
+                </ul>
+                
+                <button type="button" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        
+            <h1 id="logo"><a href="index.html">Holy Kitchen!</a></h1>
+
+            <a href="login.html" aria-label="Login" id="usuario"><i class="fa-solid fa-user"></i></a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="publique-intro">
+            <h2>Publique Sua Receita!</h2>
+
+            <p>
+                Tem uma receita que faz sucesso lá em casa? Compartilhe com a gente e inspire outras pessoas a experimentar algo novo e delicioso.
+            </p>
+
+            <p>
+                Depois que você enviar, a gente dá uma olhadinha com carinho. Assim que aprovada, sua receita ganha um cantinho aqui no site — e você recebe um e-mail contando a novidade.
+            </p>
+        </section>
+
+        <section id="publique-form">
+            <form action="">
+                <fieldset>
+                    <legend>Sobre Você</legend>
+
+                    <label for="nome">Seu nome</label>
+                    <input type="text" name="nome" id="nome" required placeholder="Como podemos te chamar?">
+
+                    <label for="email">Seu e-mail</label>
+                    <input type="email" name="email" id="email" required placeholder="Pra te avisar quando a receita for publicada">
+
+                    <label for="credito">Como você quer ser creditada(o)?</label>
+                    <input type="text" name="credito" id="credito" placeholder="Seu nome ou @ do Instagram">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sobre a Receita</legend>
+
+                    <label for="sabor">Sua receita é doce ou salgada?</label>
+                    <select name="sabor" id="sabor" required>
+                        <option value="doce">Doce</option>
+                        <option value="salgada">Salgada</option>
+                    </select>
+
+                    <label for="categoria">Categoria</label>
+                    <select name="categoria" id="categoria" required>
+                        <option value="cafe">Café da manhã</option>
+                        <option value="sobremesa">Sobremesa</option>
+                        <option value="principal">Prato principal</option>
+                        <option value="lanche">Lanche</option>
+                    </select>
+
+                    <label for="dificuldade">Nível de dificuldade</label>
+                    <select name="dificuldade" id="dificuldade" required>
+                        <option value="facil">Fácil</option>
+                        <option value="medio">Médio</option>
+                        <option value="dificil">Difícil</option>
+                    </select>
+
+                    <label for="nome-receita">Nome da receita</label>
+                    <input type="text" name="nome-receita" id="nome-receita" required placeholder="Como você batizou essa receita?">
+                
+                    <fieldset>
+                        <legend>Tempo de preparo</legend>
+
+                        <label for="horas">Horas</label>
+                        <input type="number" name="horas" id="horas" required>
+                        
+                        <label for="minutos">Minutos</label>
+                        <input type="number" name="minutos" id="minutos" required>
+                    </fieldset>
+
+                    <label for="rendimento">Rende quantas porções?</label>
+                    <input type="number" name="rendimento" id="rendimento">
+
+                    <label for="ingredientes">Ingredientes</label>
+                    <textarea name="ingredientes" id="ingredientes" required placeholder="Um por linha, ex: 2 ovos"></textarea>
+
+                    <label for="preparo">Modo de preparo</label>
+                    <textarea name="preparo" id="preparo" required placeholder="Conta o passo a passo pra gente"></textarea>
+
+                    <label for="arquivo">Adicione uma foto (ou vídeo) da sua receita</label>
+                    <input type="file" name="arquivo" id="arquivo">
+                </fieldset>
+
+                <input type="submit" name="enviar" id="enviar" value="Enviar receita">
+                <input type="reset" value="Limpar formulário">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Feito com carinho por Nathália de Bona</p>
+
+        <ul>
+            <li>
+                <a href="mailto:nathdbona@gmail.com"><i class="fa-regular fa-envelope"></i> nathdbona@gmail.com</a>
+            </li>
+
+            <li>
+                <a href="https://github.com/nathaliadebona"><i class="fa-brands fa-github"></i> nathaliadebona</a>
+            </li>
+        </ul>
+
+        <p>&#169; 2026 Holy Kitchen!</p>
+    </footer>
+</body>
+</html>
