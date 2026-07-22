@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blog</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="estilos/global.css">
+    <link rel="stylesheet" href="estilos/blog.css">
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Navegação principal">
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="receitas.html">Receitas</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="publique.html">Publique sua Receita</a></li>
+                </ul>
+                
+                <button type="button" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        
+            <h1 id="logo"><a href="index.html">Holy Kitchen!</a></h1>
+
+            <a href="login.html" aria-label="Login" id="usuario"><i class="fa-solid fa-user"></i></a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="blog-intro">
+            <h2>Blog</h2>
+
+            <p>Dicas, truques e ideias pra facilitar sua vida na cozinha (e fora dela também).</p>
+        </section>
+
+        <section id="blog-grid">
+            <article>
+                <a href="./blog/pressa.html">
+                    <picture>
+                        <source media="(max-width: 670px)" srcset="imagens/pressa-card-mobile.webp">
+                        <img src="imagens/pressa-card.webp" alt="Receitas rápidas e fáceis">
+                    </picture>
+
+                    <h3>Está com Pressa?</h3>
+
+                    <p>Receitas rápidas e fáceis pra quem não abre mão de comer bem, mesmo com a agenda cheia.</p>
+                </a>
+            </article>
+
+            <article>
+                <a href="./blog/piquenique.html">
+                    <picture>
+                        <source media="(max-width: 670px)" srcset="imagens/piquenique-card-mobile.webp">
+                        <img src="imagens/piquenique-card.webp" alt="Piquenique ao ar livre">
+                    </picture>
+
+                    <h3>Planejando um Piquenique?</h3>
+
+                    <p>Tudo que você precisa saber pra aproveitar o dia ao ar livre sem esquecer nada.</p>
+                </a>
+            </article>
+
+            <article>
+                <a href="./blog/cozinhar-1-2.html">
+                    <picture>
+                        <source media="(max-width: 670px)" srcset="imagens/cozinhar-1-2-card-mobile.webp">
+                        <img src="imagens/cozinhar-1-2-card.webp" alt="Refeição para uma pessoa">
+                    </picture>
+
+                    <h3>Cozinhando para Uma ou Duas Pessoas</h3>
+
+                    <p>Porções certas, sem sobra e sem desperdício. Cozinhar sozinha (ou a dois) também pode ser gostoso.</p>
+                </a>
+            </article>
+
+            <article>
+                <a href="./blog/despensa.html">
+                    <picture>
+                        <source media="(max-width: 670px)" srcset="imagens/despensa-card-mobile.webp">
+                        <img src="imagens/despensa-card.webp" alt="Despensa organizada">
+                    </picture>
+
+                    <h3>Como Organizar sua Despensa e Geladeira</h3>
+
+                    <p>Um jeitinho simples de saber o que você tem, evitar desperdício e facilitar a vida na hora de cozinhar.</p>
+                </a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Feito com carinho por Nathália de Bona</p>
+
+        <ul>
+            <li>
+                <a href="mailto:nathdbona@gmail.com"><i class="fa-regular fa-envelope"></i> nathdbona@gmail.com</a>
+            </li>
+
+            <li>
+                <a href="https://github.com/nathaliadebona"><i class="fa-brands fa-github"></i> nathaliadebona</a>
+            </li>
+        </ul>
+
+        <p>&#169; 2026 Holy Kitchen!</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
