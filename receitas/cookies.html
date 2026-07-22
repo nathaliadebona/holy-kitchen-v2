@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cookies com Gotas de Chocolate</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../estilos/global.css">
+    <link rel="stylesheet" href="../estilos/receita.css">
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Navegação principal">
+            <div id="menu">
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="../receitas.html">Receitas</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../publique.html">Publique sua Receita</a></li>
+                </ul>
+                
+                <button type="button" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        
+            <h1 id="logo"><a href="../index.html">Holy Kitchen!</a></h1>
+
+            <a href="../login.html" aria-label="Login" id="usuario"><i class="fa-solid fa-user"></i></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="receita-intro">
+            <picture>
+                <source media="(max-width: 670px)" srcset="../imagens/cookies-full-mobile.webp">
+                <img src="../imagens/cookies-full.webp" alt="Cookies com gotas de chocolate">
+            </picture>
+
+            <h2>Cookies com Gotas de Chocolate</h2>
+
+            <p>
+                Prepare-se para se deliciar com os melhores cookies com gotas de chocolate que você já experimentou! Perfeitos pra acompanhar um café ou pra quando bater aquela vontade de um doce irresistível.
+            </p>
+
+            <ul>
+                <li><i class="fa-regular fa-clock"></i> Tempo de preparo: 40 minutos</li>
+                <li><i class="fa-solid fa-bowl-food"></i> Rendimento: 22 unidades</li>
+                <li><i class="facil fa-solid fa-heart"></i> Dificuldade: Fácil</li>
+            </ul>
+        </section>
+
+        <section class="ingredientes">
+            <h3>Ingredientes</h3>
+
+            <label for="porcoes">Porções</label>
+            <input type="number" id="porcoes" name="porcoes" value="22">
+
+            <ul>
+                <li>
+                    <label>
+                        <input type="checkbox" id="ing-1">
+                        <span data-qtd="125">125</span>g de manteiga sem sal em temperatura ambiente
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="ing-2">
+                        <span data-qtd="0.5">1/2</span> xícara de açúcar mascavo
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="ing-3">
+                        <span data-qtd="1.75">1 e 3/4</span> xícara de farinha de trigo
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="ing-4">
+                        <span data-qtd="300">300</span>g de chocolate meio amargo picado
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="ing-5">
+                        <span data-qtd="0.75">3/4</span> xícara de açúcar
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="ing-6">
+                        <span data-qtd="1">1</span> ovo
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="ing-7">
+                        <span data-qtd="1">1</span> colher (chá) de fermento em pó
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="ing-8">
+                        <span data-qtd="1">1</span> colher (chá) de essência de baunilha
+                    </label>
+                </li>
+            </ul>
+        </section>
+
+        <section class="modo-preparo">
+            <h3>Modo de Preparo</h3>
+
+            <ol>
+                <li>
+                    <label>
+                        <input type="checkbox" id="passo-1">
+                        Misture a manteiga, o açúcar mascavo, o açúcar e a essência de baunilha.
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="passo-2">
+                        Adicione o ovo batido aos poucos e misture bem.
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="passo-3">
+                        Acrescente a farinha aos poucos e misture bem (pode ser à mão ou na batedeira planetária).
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="passo-4">
+                        Por último, adicione o fermento e misture só até incorporar à massa.
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="passo-5">
+                        Depois da massa bem misturada, adicione o chocolate picado.
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="passo-6">
+                        Forme bolinhas pequenas e asse em forno preaquecido, sobre papel manteiga, por aproximadamente 15 a 20 minutos (250°C).
+                    </label>
+                </li>    
+            </ol>
+
+            <p>Dica: os cookies se espalham no forno enquanto crescem, então as bolinhas devem ser pequenas. Fique de olho pra não queimar por baixo.</p>
+        </section>
+
+        <div class="comparador">
+            <button type="button">Comparar medidas</button>
+
+            <dialog id="modal-medidas">
+                <button type="button" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+
+                <h3>Comparador de Medidas</h3>
+
+                <p>Vale só pra ingredientes líquidos ou secos soltos — o peso muda de ingrediente pra ingrediente!</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="medida" scope="col">Medida</th>
+                            <th class="equivalente" scope="col">Equivalente em ml</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="medida">1 xícara de chá</td>
+                            <td class="equivalente">240 ml</td>
+                        </tr>
+
+                        <tr>
+                            <td class="medida">1 copo americano</td>
+                            <td class="equivalente">200 ml</td>
+                        </tr>
+
+                        <tr>
+                            <td class="medida">1 colher de sopa</td>
+                            <td class="equivalente">15 ml</td>
+                        </tr>
+
+                        <tr>
+                            <td class="medida">1 colher de chá</td>
+                            <td class="equivalente">5 ml</td>
+                        </tr>
+
+                        <tr>
+                            <td class="medida">1 colher de café</td>
+                            <td class="equivalente">2,5 ml</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </dialog>
+        </div>
+
+        <p class="veja-tambem">Veja também:<a href="torta-limao.html"> Torta de Limão</a></p>
+    </main>
+
+    <footer>
+        <p>Feito com carinho por Nathália de Bona</p>
+
+        <ul>
+            <li>
+                <a href="mailto:nathdbona@gmail.com"><i class="fa-regular fa-envelope"></i> nathdbona@gmail.com</a>
+            </li>
+
+            <li>
+                <a href="https://github.com/nathaliadebona"><i class="fa-brands fa-github"></i> nathaliadebona</a>
+            </li>
+        </ul>
+
+        <p>&#169; 2026 Holy Kitchen!</p>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
