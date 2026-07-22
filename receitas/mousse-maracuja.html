@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mousse de Maracujá com Calda</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../estilos/global.css">
+    <link rel="stylesheet" href="../estilos/receita.css">
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Navegação principal">
+            <div id="menu">
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="../receitas.html">Receitas</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../publique.html">Publique sua Receita</a></li>
+                </ul>
+                
+                <button type="button" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        
+            <h1 id="logo"><a href="../index.html">Holy Kitchen!</a></h1>
+
+            <a href="../login.html" aria-label="Login" id="usuario"><i class="fa-solid fa-user"></i></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="receita-intro">
+            <picture>
+                <source media="(max-width: 670px)" srcset="../imagens/mousse-maracuja-full-mobile.webp">
+                <img src="../imagens/mousse-maracuja-full.webp" alt="Mousse de maracujá com calda em taça">
+            </picture>
+
+            <h2>Mousse de Maracujá com Calda</h2>
+
+            <p>
+                Leve, cremosa e com aquele toque azedinho que todo mundo ama. Uma sobremesa que impressiona — e vale cada minuto de dedicação no preparo.
+            </p>
+
+            <ul>
+                <li><i class="fa-regular fa-clock"></i> Tempo de preparo: 30 minutos (+ 3h de geladeira)</li>
+                <li><i class="fa-solid fa-bowl-food"></i> Rendimento: 8 porções</li>
+                <li><i class="dificil fa-solid fa-heart"></i> Dificuldade: Difícil</li>
+            </ul>
+        </section>
+
+        <section class="ingredientes">
+            <h3>Ingredientes</h3>
+
+            <label for="porcoes">Porções</label>
+            <input type="number" id="porcoes" name="porcoes" value="8">
+
+            <h4>Mousse</h4>
+            <ul>
+                <li>
+                    <label>
+                        <input type="checkbox" id="ing-1">
+                        <span data-qtd="1">1</span> lata de leite condensado (395g)
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="ing-2">
+                        <span data-qtd="1">1</span> caixinha de creme de leite (200g)
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="ing-3">
+                        <span data-qtd="200">200</span>ml de suco concentrado de maracujá (polpa de aprox. 4 maracujás)
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="ing-4">
+                        <span data-qtd="12">12</span>g de gelatina incolor sem sabor (1 envelope)
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="ing-5">
+                        <span data-qtd="3">3</span> colheres (sopa) de água, pra hidratar a gelatina
+                    </label>
+                </li>
+            </ul>
+
+            <h4>Calda</h4>
+            <ul>
+                <li>
+                    <label>
+                        <input type="checkbox" id="ing-6">
+                        <span data-qtd="2">2</span> maracujás
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="ing-7">
+                        <span data-qtd="4">4</span> colheres (sopa) de açúcar
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="ing-8">
+                        <span data-qtd="100">100</span>ml de água
+                    </label>
+                </li>
+            </ul>
+        </section>
+
+        <section class="modo-preparo">
+            <h3>Modo de Preparo</h3>
+
+            <ol>
+                <li>
+                    <label>
+                        <input type="checkbox" id="passo-1">
+                        Hidrate a gelatina na água e leve ao micro-ondas por 15 segundos, até dissolver completamente.
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="passo-2">
+                        No liquidificador, bata o leite condensado, o creme de leite e o suco de maracujá até ficar homogêneo.
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="passo-3">
+                        Com o liquidificador ligado em velocidade baixa, adicione a gelatina dissolvida aos poucos.
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="passo-4">
+                        Distribua a mousse em taças e leve à geladeira por pelo menos 3 horas.
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="passo-5">
+                        Pra calda, leve ao fogo a polpa de maracujá, o açúcar e a água, mexendo até engrossar levemente (cerca de 10 minutos). Deixe esfriar.
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" id="passo-6">
+                        Cubra as taças com a calda antes de servir.
+                    </label>
+                </li>    
+            </ol>
+        </section>
+
+        <div class="comparador">
+            <button type="button">Comparar medidas</button>
+
+            <dialog id="modal-medidas">
+                <button type="button" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+
+                <h3>Comparador de Medidas</h3>
+
+                <p>Vale só pra ingredientes líquidos ou secos soltos — o peso muda de ingrediente pra ingrediente!</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="medida" scope="col">Medida</th>
+                            <th class="equivalente" scope="col">Equivalente em ml</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="medida">1 xícara de chá</td>
+                            <td class="equivalente">240 ml</td>
+                        </tr>
+
+                        <tr>
+                            <td class="medida">1 copo americano</td>
+                            <td class="equivalente">200 ml</td>
+                        </tr>
+
+                        <tr>
+                            <td class="medida">1 colher de sopa</td>
+                            <td class="equivalente">15 ml</td>
+                        </tr>
+
+                        <tr>
+                            <td class="medida">1 colher de chá</td>
+                            <td class="equivalente">5 ml</td>
+                        </tr>
+
+                        <tr>
+                            <td class="medida">1 colher de café</td>
+                            <td class="equivalente">2,5 ml</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </dialog>
+        </div>
+
+        <p class="veja-tambem">Veja também:<a href="../receitas.html"> Ver todas as Receitas</a></p>
+    </main>
+
+    <footer>
+        <p>Feito com carinho por Nathália de Bona</p>
+
+        <ul>
+            <li>
+                <a href="mailto:nathdbona@gmail.com"><i class="fa-regular fa-envelope"></i> nathdbona@gmail.com</a>
+            </li>
+
+            <li>
+                <a href="https://github.com/nathaliadebona"><i class="fa-brands fa-github"></i> nathaliadebona</a>
+            </li>
+        </ul>
+
+        <p>&#169; 2026 Holy Kitchen!</p>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
