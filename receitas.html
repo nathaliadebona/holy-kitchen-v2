@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Receitas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="estilos/global.css">
+    <link rel="stylesheet" href="estilos/receitas.css">
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Navegação principal">
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="receitas.html">Receitas</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="publique.html">Publique sua Receita</a></li>
+                </ul>
+                
+                <button type="button" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        
+            <h1 id="logo"><a href="index.html">Holy Kitchen!</a></h1>
+
+            <a href="login.html" aria-label="Login" id="usuario"><i class="fa-solid fa-user"></i></a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="receitas-intro">
+            <h2>Receitas</h2>
+            <p>De receitas doces a salgadas, tem sempre alguma coisa gostosa esperando por você aqui.</p>
+        </section>
+
+        <section id="filtros">
+            <fieldset id="filtro-tipo">
+                <legend>Tipo</legend>
+
+                <button type="button" class="filtro filtro-reset" data-tipo="todas">
+                    Todas
+                </button>
+
+                <button type="button" class="filtro" data-tipo="doce">
+                    Doces
+                </button>
+
+                <button type="button" class="filtro" data-tipo="salgada">
+                    Salgadas
+                </button>
+            </fieldset>
+
+            <fieldset id="filtro-dificuldade">
+                <legend>Dificuldade</legend>
+
+                <button type="button" class="filtro" data-dificuldade="facil">
+                    Fácil
+                </button>
+
+                <button type="button" class="filtro" data-dificuldade="medio">
+                    Médio
+                </button>
+
+                <button type="button" class="filtro" data-dificuldade="dificil">
+                    Difícil
+                </button>
+            </fieldset>
+        </section>
+
+        <section id="receitas-grid">
+            <article data-tipo="doce" data-dificuldade="facil">
+                <a href="./receitas/cookies.html">
+                    <picture>
+                        <source media="(max-width: 670px)" srcset="imagens/cookies-card-mobile.webp">
+                        <img src="imagens/cookies-card.webp" alt="Cookies com gotas de chocolate">
+                    </picture>
+
+                    <h3>Cookies com Gotas de Chocolate</h3>
+
+                    <p>Crocante por fora, macio por dentro. Simplesmente irresistível.</p>
+
+                    <ul>
+                        <li><i class="fa-regular fa-clock"></i> 40 minutos</li>
+                        <li><i class="facil fa-solid fa-heart"></i> Fácil</li>
+                    </ul>
+                </a>
+            </article>
+
+            <article data-tipo="doce" data-dificuldade="medio">
+                <a href="./receitas/torta-limao.html">
+                    <picture>
+                        <source media="(max-width: 670px)" srcset="imagens/torta-limao-card-mobile.webp">
+                        <img src="imagens/torta-limao-card.webp" alt="Torta de limão">
+                    </picture>
+
+                    <h3>Torta de Limão</h3>
+
+                    <p>O equilíbrio perfeito entre doce e azedinho, numa base crocante.</p>
+
+                    <ul>
+                        <li><i class="fa-regular fa-clock"></i> 40 minutos (+ 2h de geladeira)</li>
+                        <li><i class="medio fa-solid fa-heart"></i> Médio</li>
+                    </ul>
+                </a>
+            </article>
+
+            <article data-tipo="doce" data-dificuldade="dificil">
+                <a href="./receitas/mousse-maracuja.html">
+                    <picture>
+                        <source media="(max-width: 670px)" srcset="imagens/mousse-maracuja-card-mobile.webp">
+                        <img src="imagens/mousse-maracuja-card.webp" alt="Mousse de maracujá">
+                    </picture>
+
+                    <h3>Mousse de Maracujá com Calda</h3>
+
+                    <p>Leve, cremosa e com aquele toque azedinho que todo mundo ama.</p>
+
+                    <ul>
+                        <li><i class="fa-regular fa-clock"></i> 30 minutos (+ 3h de geladeira)</li>
+                        <li><i class="dificil fa-solid fa-heart"></i> Difícil</li>
+                    </ul>
+                </a>
+            </article>
+
+            <article data-tipo="salgada" data-dificuldade="facil">
+                <a href="./receitas/omelete.html">
+                    <picture>
+                        <source media="(max-width: 670px)" srcset="imagens/omelete-card-mobile.webp">
+                        <img src="imagens/omelete-card.webp" alt="Omelete recheada">
+                    </picture>
+
+                    <h3>Omelete Recheada</h3>
+
+                    <p>Rápida, prática e recheada do seu jeito. Perfeita pra qualquer hora do dia.</p>
+
+                    <ul>
+                        <li><i class="fa-regular fa-clock"></i> 15 minutos</li>
+                        <li><i class="facil fa-solid fa-heart"></i> Fácil</li>
+                    </ul>
+                </a>
+            </article>
+
+            <article data-tipo="salgada" data-dificuldade="medio">
+                <a href="./receitas/sopa-tomate.html">
+                    <picture>
+                        <source media="(max-width: 670px)" srcset="imagens/sopa-tomate-card-mobile.webp">
+                        <img src="imagens/sopa-tomate-card.webp" alt="Sopa de tomate">
+                    </picture>
+
+                    <h3>Sopa de Tomate</h3>
+
+                    <p>Conforto em forma de sopa, pra qualquer dia frio (ou não).</p>
+
+                    <ul>
+                        <li><i class="fa-regular fa-clock"></i> 1h10</li>
+                        <li><i class="medio fa-solid fa-heart"></i> Médio</li>
+                    </ul>
+                </a>
+            </article>
+
+            <article data-tipo="salgada" data-dificuldade="dificil">
+                <a href="./receitas/risoto.html">
+                    <picture>
+                        <source media="(max-width: 670px)" srcset="imagens/risoto-card-mobile.webp">
+                        <img src="imagens/risoto-card.webp" alt="Risoto de cogumelos">
+                    </picture>
+
+                    <h3>Risoto de Cogumelos</h3>
+
+                    <p>Cremoso, aromático e vale cada minuto de atenção no fogão.</p>
+
+                    <ul>
+                        <li><i class="fa-regular fa-clock"></i> 45 minutos</li>
+                        <li><i class="dificil fa-solid fa-heart"></i> Difícil</li>
+                    </ul>
+                </a>
+            </article>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>Feito com carinho por Nathália de Bona</p>
+
+        <ul>
+            <li>
+                <a href="mailto:nathdbona@gmail.com"><i class="fa-regular fa-envelope"></i> nathdbona@gmail.com</a>
+            </li>
+
+            <li>
+                <a href="https://github.com/nathaliadebona"><i class="fa-brands fa-github"></i> nathaliadebona</a>
+            </li>
+        </ul>
+
+        <p>&#169; 2026 Holy Kitchen!</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
