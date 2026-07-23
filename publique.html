@@ -95,11 +95,15 @@
                     <fieldset>
                         <legend>Tempo de preparo</legend>
 
-                        <label for="horas">Horas</label>
-                        <input type="number" name="horas" id="horas" required>
+                        <div class="campo-duplo">
+                            <label for="horas">Horas</label>
+                            <input type="number" name="horas" id="horas" required>
+                        </div>
                         
-                        <label for="minutos">Minutos</label>
-                        <input type="number" name="minutos" id="minutos" required>
+                        <div class="campo-duplo">
+                            <label for="minutos">Minutos</label>
+                            <input type="number" name="minutos" id="minutos" required>
+                        </div>
                     </fieldset>
 
                     <label for="rendimento">Rende quantas porções?</label>
@@ -115,8 +119,10 @@
                     <input type="file" name="arquivo" id="arquivo">
                 </fieldset>
 
-                <input class="botao botao-principal" type="submit" name="enviar" id="enviar" value="Enviar receita">
-                <input class="botao botao-secundario" type="reset" value="Limpar formulário">
+                <div class="botoes-form">
+                    <input class="botao botao-principal" type="submit" name="enviar" id="enviar" value="Enviar receita">
+                    <input class="botao botao-secundario" type="reset" value="Limpar formulário">
+                </div>
             </form>
         </section>
     </main>

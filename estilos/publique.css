@@ -1,0 +1,125 @@
+#publique-intro {
+    margin-top: var(--espaco-secao);
+    text-align: center;
+}
+
+form {
+    max-width: 750px;
+    margin-inline: auto;
+    padding-inline: var(--espaco-bloco);
+}
+
+fieldset {
+    border: none;
+    margin-bottom: var(--espaco-secao);
+    padding: var(--espaco-padrao);
+    background-color: var(--cor-fundo-cards);
+    border-radius: var(--borda-radius);
+}
+
+fieldset fieldset {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    margin-top: var(--espaco-bloco);
+    margin-bottom: var(--espaco-bloco);
+    display: flex;
+    gap: var(--espaco-bloco);
+}
+
+.campo-duplo {
+    flex: 1;
+}
+
+legend {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-coral);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: var(--espaco-bloco);
+    padding: 0 var(--espaco-icone-texto);
+}
+
+label {
+    display: block;
+    margin-top: var(--espaco-bloco);
+    margin-bottom: var(--espaco-icone-texto);
+    font-weight: 500;
+}
+
+input:not([type="submit"]):not([type="reset"]), select, textarea {
+    width: 100%;
+    padding: var(--espaco-padrao);
+    border: 1px solid var(--cor-sombra);
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--cor-coral);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input[type="file"] {
+    border: 1px dashed var(--cor-sombra);
+    background-color: var(--cor-fundo-cards);
+    padding: var(--espaco-padrao);
+}
+
+input[type="file"]::file-selector-button {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    margin-right: var(--espaco-padrao);
+    border: none;
+    border-radius: 50rem;
+    background-color: var(--cor-verde-salvia);
+    color: var(--cor-fundo-cards);
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transicao);
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: var(--cor-verde-salvia-hover);
+}
+
+#publique-form {
+    margin-bottom: var(--espaco-pagina);
+}
+
+css
+.botoes-form {
+    margin-top: var(--espaco-padrao);
+}
+
+.botoes-form input {
+    display: block;
+    margin-top: var(--espaco-padrao);
+}
+
+@media (min-width: 1024px) {
+    #publique-intro h2 {
+        font-size: 2.2rem;
+    }
+
+    form {
+        max-width: 900px;
+    }
+
+    .botoes-form {
+        display: flex;
+        justify-content: flex-start;
+        gap: var(--espaco-padrao);
+    }
+}
+
+
+
+
