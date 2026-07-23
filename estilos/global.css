@@ -7,6 +7,7 @@
     --cor-verde-salvia-hover: #6F7D64;
     --cor-texto: #2B2420;
     --cor-sombra: rgba(43, 36, 32, 0.15);
+    --cor-sombra-sutil: 0 2px 6px rgba(43, 36, 32, 0.08);
 
     --fonte-titulo: 'Poppins', sans-serif;
     --fonte-corpo: 'Nunito Sans', sans-serif;
@@ -43,7 +44,26 @@ body {
 }
 
 main > section + section {
-    margin-top: var(--espaco-secao);
+    margin-top: 0;
+    position: relative;
+}
+
+main > section + section::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    background-image: url('../imagens/divisor-onda.svg');
+    background-repeat: repeat-x;
+    background-size: 100px 20px;
+    margin-top: var(--espaco-pagina);
+    margin-bottom: var(--espaco-pagina);
+}
+
+.container {
+    max-width: var(--largura-maxima);
+    margin-inline: auto;
+    padding-inline: var(--espaco-secao);
 }
 
 a {
@@ -53,6 +73,11 @@ a {
 h1, h2, h3, h4 {
     font-family: var(--fonte-titulo);
     color: var(--cor-coral);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: var(--espaco-bloco);
 }
 
 header {
