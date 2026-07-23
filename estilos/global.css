@@ -42,6 +42,10 @@ body {
     background-color: var(--cor-fundo);
 }
 
+main > section + section {
+    margin-top: var(--espaco-secao);
+}
+
 a {
     text-decoration: none;
 }
@@ -130,6 +134,7 @@ header nav {
     font-family: var(--fonte-titulo);
     font-weight: 600;
     border: none;
+    border-radius: 50rem;
     cursor: pointer;
     transition: var(--transicao);
 }
