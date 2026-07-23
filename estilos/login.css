@@ -1,0 +1,75 @@
+main {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login {
+    background-color: var(--cor-fundo-cards);
+    border-radius: var(--borda-radius);
+    box-shadow: var(--cor-sombra-sutil);
+    overflow: hidden;
+    max-width: 900px;
+    width: 90%;
+    margin-block: var(--espaco-secao);
+}
+
+#login-img {
+    display: none;
+}
+
+#login-form {
+    padding: var(--espaco-secao);
+}
+
+#login-form h2 {
+    text-align: center;
+    margin-bottom: var(--espaco-icone-texto);
+}
+
+#login-form p {
+    text-align: center;
+    margin-bottom: var(--espaco-secao);
+}
+
+input {
+    width: 100%;
+    padding: var(--espaco-padrao);
+    border: 1px solid var(--cor-sombra);
+    border-radius: 0.5rem;
+    font-family: inherit;
+    margin-bottom: var(--espaco-bloco);
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--cor-coral);
+}
+
+input[type="submit"] {
+    width: 100%;
+}
+
+.botoes-form {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    #login {
+        display: flex;
+        
+    }
+
+    #login-img {
+        display: block;
+        flex: 1;
+        background-image: url(../imagens/login.webp);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #login-form {
+        flex: 1;
+    }
+}
