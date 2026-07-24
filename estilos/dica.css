@@ -68,6 +68,7 @@ article li {
 
 .veja-tambem {
     text-align: center;
+    margin-top: var(--espaco-pagina);
     margin-block: var(--espaco-bloco);
     font-size: 1.1rem;
 }
@@ -79,6 +80,31 @@ article li {
 .veja-tambem a:hover {
     color: var(--cor-verde-salvia-hover);
 }
+
+.bloco-dica h3 {
+    margin-top: var(--espaco-bloco);
+    margin-bottom: var(--espaco-padrao);
+    font-size: 1.2rem;
+}
+
+.bloco-dica ul {
+    margin-left: var(--espaco-padrao);
+    margin-bottom: var(--espaco-bloco);
+}
+
+.bloco-dica li {
+    margin-bottom: var(--espaco-icone-texto);
+    line-height: 1.6;
+}
+
+.lembrete {
+    margin-top: var(--espaco-bloco);
+    margin-bottom: var(--espaco-pagina);
+    color: var(--cor-coral-hover);
+    font-size: 1.05rem;
+    font-style: italic;
+}
+
 
 @media (min-width: 1024px) {
     .dica-intro,
@@ -120,5 +146,24 @@ article li {
     article ul,
     article ol {
         font-size: 1.15rem;
+    }
+
+    .bloco-dica {
+        max-width: 900px;
+        margin-inline: auto;
+    }
+
+    .bloco-dica h3 {
+        font-size: 1.6rem;
+    }
+
+    .bloco-dica li {
+        font-size: 1.15rem;
+    }
+
+    .lembrete {
+        text-align: center;
+        max-width: 900px;
+        margin-inline: auto;
     }
 }
