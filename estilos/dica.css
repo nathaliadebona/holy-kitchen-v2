@@ -1,0 +1,124 @@
+main {
+    padding-inline: var(--espaco-secao);
+}
+
+.dica-intro {
+    margin-top: var(--espaco-secao);
+    text-align: center;
+}
+
+.dica-intro img {
+    border-radius: var(--borda-radius);
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: var(--espaco-bloco);
+}
+
+#mini-receitas {
+    margin-bottom: var(--espaco-pagina);
+}
+
+#mini-receitas article + article {
+    margin-top: var(--espaco-pagina);
+}
+
+#mini-receitas article + article::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    background-image: url('../imagens/divisor-onda.svg');
+    background-repeat: repeat-x;
+    background-size: 100px 20px;
+    margin-bottom: var(--espaco-bloco);
+}
+
+article img {
+    border-radius: var(--borda-radius);
+    max-height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+article h3 {
+    margin-top: var(--espaco-bloco);
+}
+
+article strong {
+    display: block;
+    margin-block: var(--espaco-padrao);
+    color: var(--cor-verde-salvia-hover);
+}
+
+article h4 {
+    margin-block: var(--espaco-padrao);
+    font-size: 1.1rem;
+}
+article ul,
+article ol {
+    margin-left: var(--espaco-padrao);
+    margin-bottom: var(--espaco-bloco);
+}
+
+article li {
+    margin-bottom: var(--espaco-icone-texto);
+    line-height: 1.6;
+}
+
+.veja-tambem {
+    text-align: center;
+    margin-block: var(--espaco-bloco);
+    font-size: 1.1rem;
+}
+
+.veja-tambem a {
+    color: var(--cor-verde-salvia);
+}
+
+.veja-tambem a:hover {
+    color: var(--cor-verde-salvia-hover);
+}
+
+@media (min-width: 1024px) {
+    .dica-intro,
+    #mini-receitas {
+        max-width: 900px;
+        margin-inline: auto;
+    }
+
+    .dica-intro img {
+        max-height: 650px;
+    }
+
+    article img {
+        max-height: 600px;
+    }
+
+    .dica-intro h2 {
+        font-size: 2.3rem;
+    }
+
+    article strong {
+        text-align: center;
+        font-size: 1.15rem;
+    }
+
+    article h3 {
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    article h4 {
+        font-size: 1.3rem;
+    }
+
+    article p {
+        text-align: center;
+    }
+
+    article ul,
+    article ol {
+        font-size: 1.15rem;
+    }
+}
