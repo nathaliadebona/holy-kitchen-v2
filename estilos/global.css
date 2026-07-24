@@ -43,6 +43,12 @@ body {
     background-color: var(--cor-fundo);
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 main > section + section {
     margin-top: 0;
     position: relative;
@@ -247,6 +253,18 @@ footer a:hover {
     padding: 0 var(--espaco-padrao) var(--espaco-padrao);
     color: var(--cor-texto);
     font-size: 1.1rem;
+}
+
+.facil {
+    color: var(--cor-verde-salvia);
+}
+
+.medio {
+    color: #E0AD5C;
+}
+
+.dificil {
+    color: var(--cor-coral);
 }
 
 @media (min-width: 1024px) {

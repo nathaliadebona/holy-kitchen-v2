@@ -69,18 +69,6 @@ button.filtro-reset {
     color: var(--cor-texto);
 }
 
-.facil {
-    color: var(--cor-verde-salvia);
-}
-
-.medio {
-    color: #E0AD5C;
-}
-
-.dificil {
-    color: var(--cor-coral);
-}
-
 @media (min-width: 768px) {
     #receitas-intro h2{
         font-size: 2.2rem;
