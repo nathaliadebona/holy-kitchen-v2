@@ -12,7 +12,7 @@ form {
 fieldset {
     border: none;
     margin-bottom: var(--espaco-secao);
-    padding: var(--espaco-padrao);
+    padding: var(--es) var(--espaco-padrao);
     background-color: var(--cor-fundo-cards);
     border-radius: var(--borda-radius);
 }
@@ -94,7 +94,6 @@ input[type="file"]::file-selector-button:hover {
     margin-bottom: var(--espaco-pagina);
 }
 
-css
 .botoes-form {
     margin-top: var(--espaco-padrao);
 }
