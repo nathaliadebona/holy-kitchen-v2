@@ -1,0 +1,21 @@
+#blog-intro {
+    margin-top: var(--espaco-secao);
+    text-align: center;
+}
+
+#blog-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--espaco-bloco);
+    margin-bottom: var(--espaco-pagina);
+}
+
+@media (min-width: 768px) {
+    #blog-intro h2 {
+        font-size: 2.2rem;
+    }
+
+    #blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
