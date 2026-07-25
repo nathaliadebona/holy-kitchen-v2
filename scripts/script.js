@@ -30,3 +30,28 @@ topoBtn.addEventListener('click', () => {
         behavior: 'smooth'
     });
 })
+
+// Carrossel do hero
+const heroSlides = document.querySelectorAll('#hero article');
+const heroDots = document.querySelectorAll('.dot')
+let slideAtual = 0;
+
+function trocarSlide() {
+    heroSlides[slideAtual].classList.remove('ativo');
+    heroDots[slideAtual].classList.remove('ativo');
+    slideAtual = (slideAtual + 1) % heroSlides.length;
+    heroSlides[slideAtual].classList.add('ativo');
+    heroDots[slideAtual].classList.add('ativo');
+}
+setInterval(trocarSlide, 5000);
+
+heroDots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        heroSlides[slideAtual].classList.remove('ativo');
+        heroDots[slideAtual].classList.remove('ativo');
+        slideAtual = index;
+        heroSlides[slideAtual].classList.add('ativo');
+        heroDots[slideAtual].classList.add('ativo');
+    });
+});
+

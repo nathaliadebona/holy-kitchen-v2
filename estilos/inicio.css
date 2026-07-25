@@ -16,7 +16,7 @@
     padding-inline: var(--espaco-bloco);
 }
 
-#hero article:first-of-type {
+#hero article.ativo {
     opacity: 1;
 }
 
@@ -68,6 +68,30 @@
     margin-top: var(--espaco-padrao);
     font-size: 0.95rem;
     padding: 0.6rem 1.5rem;
+}
+
+.hero-dots {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.8rem;
+    z-index: 2000;
+}
+
+.dot {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: var(--cor-fundo);
+    border: none;
+    cursor: pointer;
+    transition: var(--transicao);
+}
+
+.dot.ativo {
+    background-color: var(--cor-coral);
 }
 
 #sobre h2 {
