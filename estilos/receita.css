@@ -33,7 +33,12 @@ main {
 
 .receita-intro ul li i {
     font-size: 1.2rem;
-    margin-top: 0.15rem;
+    margin-top: 0.25rem;
+}
+
+.receita-intro ul li:nth-child(1) i,
+.receita-intro ul li:nth-child(2) i {
+    color: var(--cor-verde-salvia);
 }
 
 h3 {
@@ -195,6 +200,7 @@ th {
 
     .receita-intro ul {
         flex-direction: row;
+        justify-content: center;
     }
 
     .receita-intro ul li {
@@ -219,7 +225,7 @@ th {
     }
 
     .comparador button {
-    font-size: 1.1rem;
+        font-size: 1.1rem;
     }
 }
     
