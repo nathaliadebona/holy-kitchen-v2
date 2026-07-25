@@ -16,6 +16,7 @@ fieldset {
     padding: var(--espaco-bloco) var(--espaco-padrao);
     background-color: var(--cor-fundo-cards);
     border-radius: var(--borda-radius);
+    border: 1px solid rgba(43, 36, 32, 0.08);
 }
 
 fieldset fieldset {
