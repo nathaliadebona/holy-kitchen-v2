@@ -103,6 +103,7 @@ article li {
     color: var(--cor-coral-hover);
     font-size: 1.05rem;
     font-style: italic;
+    text-align: center;
 }
 
 
@@ -162,7 +163,6 @@ article li {
     }
 
     .lembrete {
-        text-align: center;
         max-width: 900px;
         margin-inline: auto;
     }
