@@ -66,6 +66,8 @@
     position: relative;
     z-index: 2;
     margin-top: var(--espaco-padrao);
+    font-size: 0.95rem;
+    padding: 0.6rem 1.5rem;
 }
 
 #sobre h2 {
