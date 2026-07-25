@@ -1,6 +1,7 @@
 #publique-intro {
     margin-top: var(--espaco-secao);
     text-align: center;
+    font-size: 1.05rem;
 }
 
 form {
@@ -12,7 +13,7 @@ form {
 fieldset {
     border: none;
     margin-bottom: var(--espaco-secao);
-    padding: var(--es) var(--espaco-padrao);
+    padding: var(--espaco-bloco) var(--espaco-padrao);
     background-color: var(--cor-fundo-cards);
     border-radius: var(--borda-radius);
 }
@@ -36,7 +37,7 @@ legend {
     color: var(--cor-coral);
     font-size: 1.3rem;
     font-weight: 600;
-    margin-bottom: var(--espaco-bloco);
+    margin-bottom: var(--espaco-padrao);
     padding: 0 var(--espaco-icone-texto);
 }
 
