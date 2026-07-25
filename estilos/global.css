@@ -282,6 +282,28 @@ footer a:hover {
     margin-top: var(--espaco-pagina);
 }
 
+.btn-topo {
+    display: none;
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--cor-coral);
+    color: var(--cor-fundo);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.btn-topo.visivel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (min-width: 1024px) {
     #logo a {
         font-size: 2rem;
