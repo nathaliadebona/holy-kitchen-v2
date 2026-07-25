@@ -87,6 +87,11 @@ h2 {
     margin-bottom: var(--espaco-bloco);
 }
 
+li {
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
 header {
     position: sticky;
     top: 0;
@@ -133,7 +138,7 @@ header nav {
 }
 
 #menu button {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--cor-texto);
     background: none;
     border: none;
@@ -147,12 +152,12 @@ header nav {
 
 #logo a {
     color: var(--cor-texto);
-    font-size: 2rem;
+    font-size: 1.4rem;
     letter-spacing: -0.03em;
 }
 
 #usuario {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--cor-verde-salvia);
     transition: var(--transicao);
 }
@@ -246,6 +251,7 @@ footer a:hover {
 .grid-cards article h3 {
     padding: 0 var(--espaco-padrao);
     margin-top: var(--espaco-icone-texto);
+    margin-bottom: var(--espaco-icone-texto);
     font-size: 1.3rem;
 }
 
@@ -267,7 +273,15 @@ footer a:hover {
     color: var(--cor-coral);
 }
 
+.veja-tambem {
+    margin-top: var(--espaco-pagina);
+}
+
 @media (min-width: 1024px) {
+    #logo a {
+        font-size: 2rem;
+    }
+
     p {
         font-size: 1.15rem;
     }
