@@ -31,6 +31,11 @@ main {
 #login-form p {
     text-align: center;
     margin-bottom: var(--espaco-secao);
+    font-size: 1.15rem;
+}
+
+label {
+    font-size: 1.05rem;
 }
 
 input {
@@ -49,6 +54,7 @@ input:focus {
 
 input[type="submit"] {
     width: 100%;
+    font-size: 1rem;
 }
 
 .botoes-form {
