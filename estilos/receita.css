@@ -19,20 +19,21 @@ main {
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: var(--espaco-bloco);
     margin-top: var(--espaco-bloco);
 }
 
 .receita-intro ul li {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: var(--espaco-icone-texto);
+    text-align: left;
 }
 
 .receita-intro ul li i {
     font-size: 1.2rem;
+    margin-top: 0.15rem;
 }
 
 h3 {
@@ -67,6 +68,12 @@ label[for="porcoes"] {
     flex-direction: column;
     gap: var(--espaco-icone-texto);
     list-style: none;
+}
+
+.ingredientes h4 {
+    margin-top: var(--espaco-bloco);
+    margin-bottom: var(--espaco-icone-texto);
+    font-size: 1.15rem;
 }
 
 li > label {
@@ -110,6 +117,7 @@ li > label input[type="checkbox"] {
     color: var(--cor-coral-hover);
     font-size: 1.05rem;
     font-style: italic;
+    text-align: center;
 }
 
 .comparador {
@@ -119,7 +127,8 @@ li > label input[type="checkbox"] {
 
 .veja-tambem {
     text-align: center;
-    margin-block: var(--espaco-bloco);
+    margin-top: var(--espaco-pagina);
+    margin-bottom: var(--espaco-bloco);
     font-size: 1.1rem;
 }
 
