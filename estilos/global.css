@@ -97,6 +97,7 @@ header {
     top: 0;
     background-color: var(--cor-fundo);
     box-shadow: 0 2px 8px var(--cor-sombra);
+    z-index: 1000;
 }
 
 header nav {
@@ -121,6 +122,10 @@ header nav {
     background-color: var(--cor-fundo);
     border-radius: var(--borda-radius);
     box-shadow: 0 4px 12px var(--cor-sombra);
+}
+
+#menu ul.ativo {
+    display: block;
 }
 
 #menu li a {
