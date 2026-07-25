@@ -162,6 +162,10 @@ article li {
         font-size: 1.15rem;
     }
 
+    #mini-receitas article h3 {
+        margin-bottom: var(--espaco-icone-texto);
+    }
+
     .lembrete {
         max-width: 900px;
         margin-inline: auto;
