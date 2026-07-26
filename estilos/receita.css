@@ -125,6 +125,11 @@ li > label input[type="checkbox"] {
     text-align: center;
 }
 
+.concluido {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
 .comparador {
     margin-block: var(--espaco-bloco);
     text-align: center;

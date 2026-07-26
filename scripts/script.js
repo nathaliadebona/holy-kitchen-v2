@@ -100,8 +100,21 @@ filtroBtn.forEach((btn) => {
                 dificuldade = 'todas';
             }
         }
-
         aplicarFiltro();
     });
 });
 
+// Checklist das receitas
+const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener('change', () => {
+        const item = checkbox.closest('li');
+
+        if (checkbox.checked) {
+            item.classList.add('concluido');
+        } else {
+            item.classList.remove('concluido');
+        }
+    });
+});
