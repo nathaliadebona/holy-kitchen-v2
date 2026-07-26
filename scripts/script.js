@@ -186,4 +186,33 @@ if (cadastrarBtn) {
     });
 };
 
+// Validação de formulário - Publique sua receita
+const publiqueForm = document.querySelector('#publique-form form');
+const camposObrigatorios = document.querySelectorAll('input[required], select[required], textarea[required]');
 
+if (publiqueForm) {
+    publiqueForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        if (publiqueForm.checkValidity()) {
+            alert('Recebemos sua receita! 🎉 Muito obrigada por compartilhar!')
+        } else {
+            document.querySelectorAll('.erro-campo').forEach((erro) => {
+                erro.remove();
+            });
+            camposObrigatorios.forEach((campo) => {
+                if (campo.validity.valueMissing) {
+                    const erro = document.createElement('span');
+                    erro.classList.add('erro-campo');
+                    erro.textContent = 'Ops, esse campinho ainda tá vazio — pode preencher?';
+                    campo.after(erro);
+                } else if (campo.validity.typeMismatch) {
+                    const erro = document.createElement('span');
+                    erro.classList.add('erro-campo');
+                    erro.textContent = 'Esse e-mail não parece certo, dá uma conferida?';
+                    campo.after(erro);
+                }
+            });
+        }
+    });
+}
