@@ -118,3 +118,19 @@ checkboxes.forEach((checkbox) => {
         }
     });
 });
+
+// Calculadora de porções
+const inputPorcoes = document.getElementById('porcoes');
+const porcaoBase = Number(inputPorcoes.value);
+const ingredientes = document.querySelectorAll('span[data-qtd]');
+
+inputPorcoes.addEventListener('input', () => {
+    const porcaoDesejada = Number(inputPorcoes.value);
+    const fator = porcaoDesejada / porcaoBase;
+
+    ingredientes.forEach((span) => {
+        const qtdOriginal = Number(span.dataset.qtd);
+        const novaQtd = qtdOriginal * fator;
+        span.textContent = novaQtd.toFixed(2);
+    });
+});
