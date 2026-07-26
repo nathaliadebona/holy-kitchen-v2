@@ -67,6 +67,12 @@ label[for="porcoes"] {
     border-color: var(--cor-coral);
 }
 
+.aviso-calculadora {
+    font-size: 1rem;
+    color: #8A8377;
+    margin-bottom: var(--espaco-padrao);
+}
+
 .ingredientes ul,
 .modo-preparo ol {
     display: flex;
