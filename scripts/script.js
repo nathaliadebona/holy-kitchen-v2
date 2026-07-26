@@ -134,3 +134,17 @@ inputPorcoes.addEventListener('input', () => {
         span.textContent = novaQtd.toFixed(2);
     });
 });
+
+// Modal do comparador de medidas
+const modal = document.getElementById('modal-medidas');
+const modalBtn = document.querySelector('.comparador button');
+const modalFechar = document.querySelector('#modal-medidas button');
+
+modalBtn.addEventListener('click', () => {
+    modal.showModal();
+});
+
+modalFechar.addEventListener('click', () => {
+    modal.close();
+});
+
