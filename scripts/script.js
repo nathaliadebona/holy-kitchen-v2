@@ -55,3 +55,53 @@ heroDots.forEach((dot, index) => {
     });
 });
 
+// Filtro de receitas
+let tipo = 'todas';
+let dificuldade = 'todas';
+
+const receitaCards = document.querySelectorAll('#receitas-grid article');
+const filtroBtn = document.querySelectorAll('.filtro');
+
+function aplicarFiltro() {
+    receitaCards.forEach((card) => {
+        const bateTipo = card.dataset.tipo === tipo || tipo === 'todas';
+        const bateDificuldade = card.dataset.dificuldade === dificuldade || dificuldade === 'todas';
+
+        if (bateTipo && bateDificuldade) {
+            card.classList.remove('escondido');
+        } else {
+            card.classList.add('escondido');
+        }
+    });
+}
+
+filtroBtn.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        const jaEstavaAtivo = btn.classList.contains('ativo');
+        const grupo = btn.closest('fieldset');
+        const botoesDoGrupo = grupo.querySelectorAll('.filtro');
+        
+        botoesDoGrupo.forEach((b) => {
+            b.classList.remove('ativo');
+        })
+
+        if (!jaEstavaAtivo) {
+            btn.classList.add('ativo');
+    
+            if (btn.dataset.tipo) {
+                tipo = btn.dataset.tipo;
+            } else {
+                dificuldade = btn.dataset.dificuldade;
+            }
+        } else {
+            if (btn.dataset.tipo) {
+                tipo = 'todas';
+            } else {
+                dificuldade = 'todas';
+            }
+        }
+
+        aplicarFiltro();
+    });
+});
+
