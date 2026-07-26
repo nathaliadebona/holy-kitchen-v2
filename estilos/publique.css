@@ -105,6 +105,13 @@ input[type="file"]::file-selector-button:hover {
     margin-top: var(--espaco-padrao);
 }
 
+.erro-campo {
+    display: block;
+    color: var(--cor-coral);
+    font-size: 0.9rem;
+    margin-top: var(--espaco-icone-texto);
+}
+
 @media (min-width: 1024px) {
     #publique-intro h2 {
         font-size: 2.2rem;
