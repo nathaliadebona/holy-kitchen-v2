@@ -11,6 +11,16 @@
     margin-bottom: var(--espaco-bloco);
 }
 
+.filtro.ativo {
+    background-color: var(--cor-coral);
+    color: var(--cor-fundo);
+    border-color: var(--cor-coral);
+}
+
+.escondido {
+    display: none;
+}
+
 fieldset {
     display: flex;
     flex-wrap: wrap;
@@ -41,7 +51,7 @@ button.filtro:hover {
     color: var(--cor-fundo);
 }
 
-button.filtro-reset {
+.filtro-reset.ativo {
     background-color: var(--cor-coral);
     color: var(--cor-fundo);
     border-color: var(--cor-coral);
