@@ -169,9 +169,21 @@ if (modal) {
 // Página de login
 const cadastrarBtn = document.getElementById('cadastrar-btn');
 const esqueceuBtn = document.getElementById('esqueceu-btn');
+const loginForm = document.querySelector('form');
 
 if (cadastrarBtn) {
     cadastrarBtn.addEventListener('click', () => {
         alert('Ainda não temos cadastro por aqui — esse é só um projeto de estudos!');
     });
-}
+
+    esqueceuBtn.addEventListener('click', () => {
+        alert('Recuperação de senha? Essa também é só de brincadeirinha por aqui 😅')
+    });
+
+    loginForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+        alert('Login de demonstração — essa é só uma simulação! Mas fica à vontade pra continuar explorando o site 🍪');
+    });
+};
+
+
