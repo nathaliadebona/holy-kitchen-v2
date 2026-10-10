@@ -4,6 +4,8 @@ Site de receitas culinárias, reconstruído do zero como projeto pessoal de estu
 
 Esse é o "segundo capítulo" do Holy Kitchen! — a primeira versão foi feita em 2024, em HTML e CSS básicos, sem nenhuma experiência prévia em programação. Essa v2 existe pra comparar a evolução técnica entre as duas versões, aplicando boas práticas de HTML semântico, CSS moderno (variáveis, Grid, Flexbox, responsividade mobile-first) e JavaScript vanilla.
 
+<img width="2150" height="4640" alt="nathaliadebona github io_holy-kitchen-v2_index html" src="https://github.com/user-attachments/assets/479897c2-6159-4965-8161-f8d97e8f138b" />
+
 ## 🔗 Sobre o projeto
 
 - **Conceito**: hub de receitas com comunidade (envio de receitas), blog de dicas, calculadora de porções, filtro de receitas e simulação de login
